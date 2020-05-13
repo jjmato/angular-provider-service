@@ -9,11 +9,12 @@ export class CarService extends VehicleService{
     super();
   }
 
-  getCar() : Car {
+  getVehicle() : Car {
     return this.vehicle = {
       ...this.vehicle,
-      
-    }
+      color: 'red',
+      cv: 100
+    } as Car;
   }
 
 }

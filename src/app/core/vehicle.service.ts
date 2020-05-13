@@ -12,4 +12,9 @@ export class VehicleService {
   getCommon(): Vehicle {
     return { id: new Date().getTime() };
   }
+
+
+  getVehicle() : Vehicle {
+    return this.vehicle;
+  };
 }
