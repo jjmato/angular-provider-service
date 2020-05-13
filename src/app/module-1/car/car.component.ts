@@ -6,14 +6,13 @@ import { CarService } from '../car.service';
   selector: 'app-car',
   templateUrl: './car.component.html',
   styleUrls: ['./car.component.css'],
-  providers: [{ provide: VehicleService, useClass: CarService }]
 })
 export class CarComponent implements OnInit {
 
   car = { };
 
   constructor(
-    private vehicleSrv: VehicleService
+    private vehicleSrv: CarService
   ) { }
 
   ngOnInit() {  

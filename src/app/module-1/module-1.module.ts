@@ -7,6 +7,7 @@ import { VehicleService } from "../core/vehicle.service";
 @NgModule({
   imports: [CommonModule],
   declarations: [CarComponent],
-  exports: [CarComponent],
+  exports: [CarComponent], 
+  providers: [ CarService ]
 })
 export class Module1Module {}
