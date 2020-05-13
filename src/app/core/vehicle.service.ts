@@ -1,8 +1,15 @@
-import { Injectable } from '@angular/core';
+import { Injectable } from "@angular/core";
+import { Vehicle } from "./vehicle";
 
-@Injectable()
 export class VehicleService {
 
-  constructor() { }
+  vehicle: Vehicle;
 
+  constructor() {
+    this.vehicle = this.getCommon();
+  }
+
+  getCommon(): Vehicle {
+    return { id: new Date().getTime() };
+  }
 }
