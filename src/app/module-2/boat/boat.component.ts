@@ -15,6 +15,7 @@ export class BoatComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    console.log( this.vehicleSrv )
     this.boat = this.vehicleSrv.getVehicle();
   }
 
