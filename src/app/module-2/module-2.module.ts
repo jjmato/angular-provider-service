@@ -8,6 +8,6 @@ import { VehicleService } from "../core/vehicle.service";
   imports: [CommonModule],
   declarations: [BoatComponent],
   exports: [BoatComponent],
-  providers: [{ provide: VehicleService, useClass: BoatService }]
+  providers: [{ provide: VehicleService, useFactory: () => new BoatService() }]
 })
 export class Module2Module {}
