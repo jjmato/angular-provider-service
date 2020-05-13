@@ -8,6 +8,7 @@ import { CarService } from './car.service';
     CommonModule
   ],
   declarations: [CarComponent],
+  exports: [CarComponent],
   providers: [CarService]
 })
 export class Module1Module { }

@@ -8,6 +8,7 @@ import { BoatService } from './boat.service';
     CommonModule
   ],
   declarations: [BoatComponent],
+  exports: [BoatComponent],
   providers: [BoatService]
 })
 export class Module2Module { }
